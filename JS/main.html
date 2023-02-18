@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: rgb(233, 178, 128);
+        }
+        p{
+
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .container{
+            background-color: antiquewhite;
+            box-shadow: 1px 1px 3px black;
+            height: 50vh;
+            width: 50%;
+            margin: 10vh 20vh;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 30px;
+            box-sizing: border-box;
+            overflow: scroll;
+        }
+        .container input{
+            width: 35vw;
+            padding: 10px 10px;
+            border-radius: 10px;
+            outline: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        input::placeholder{
+            font-weight: 100;
+        }
+        button{
+            padding: 10px 10px;
+            border-radius: 10px;
+            outline: none;
+            font-weight: bold;
+            width: 100px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #00a2ff;
+            color: white;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        #counting{
+            background-color: rgb(255, 208, 0);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container" id="contain">
+        <input id="Comment" type="text" placeholder="Type Your Comment Here">
+        <button id="submit">Post</button>
+        <p id="counting">Total Comments:</p>
+   </div>
+</body>
+<script src="main.js"></script>
+</html>
